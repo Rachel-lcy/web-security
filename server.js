@@ -16,7 +16,6 @@ http_app.get('/about', (req,res) => {
   res.send("<h1>About Page</h1>")
 })
 
-
 http.createServer(http_app).listen(3000, () => {
   console.log("Http server is running on port 3000")
 })
@@ -26,8 +25,6 @@ const https = require('https')
 const https_app = express()
 const path = require('path')// path lib for creating path to SSL certificate
 const fs = require('fs') // file system to access the SSL certificate
-
-// console.log(path.join(__dirname, './cert/ca-key.pem'))
 
 
 https_app.get('/', (req, res) => {
@@ -66,7 +63,8 @@ catch(err){
 }
 
 
-dnlkasndkla
+
+
 
 
 
